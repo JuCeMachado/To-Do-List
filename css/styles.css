@@ -19,7 +19,7 @@ body {
     align-items: center;
     height: 100vh;
     width: 100%;
-    background: linear-gradient(135deg, #845ec2, #b39cd0);    
+    background: linear-gradient(135deg, #845ec2, #b39cd0);  
 }
 
 .todo-app {
@@ -61,7 +61,7 @@ input {
     padding: 1rem;
 }
 
-button {
+.btnAgregar {
  border: none;
  outline: none;
  padding: 1.5rem 4rem;
@@ -73,25 +73,22 @@ button {
  cursor: pointer;
 }
 
-button:active {
+.btnAgregar:active {
  color: white;
  box-shadow: 0 0.2rem #dfd9d9;
  transform: translateY(0.2rem);
 }
 
-button:hover:not(:disabled) {
+.btnAgregar:hover:not(:disabled) {
  background: #7a1cac;
  color: white;
  text-shadow: 0 0.1rem #bcb4b4;
 }
 
-button:disabled {
+.btnAgregar:disabled {
  cursor: auto;
  color: grey;
 }
-
-
-
 ul li {
     list-style: none;
     padding: 1rem 0.8rem 1rem 5rem;
@@ -138,5 +135,28 @@ ul li span {
 ul li span:hover {
     background: #edeef0;
 }
+.clear-all {
+    border: none;
+    outline: none;
+    padding: 1.5rem 2rem;
+    background-color: #eee;
+    font-weight: 800;
+    border-radius: 4rem;
+    color: #7a1cac;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+     }
 
+@media (max-width: 767px){
+    .container {
+    display: flex;
+    align-items: start;
+}
+    .todo-app {
+    width: 100%;
+    margin: 2px ;
+    padding: 10px 5px 50px 5px;
+    align-items: center;
+  }
+}
 
