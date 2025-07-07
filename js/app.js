@@ -35,7 +35,7 @@ function saveData() {
 
 function showTask() {
     listContainer.innerHTML = localStorage.getItem("data");
-    checkTaskCount(); // ✅ Verificamos al cargar tareas guardadas
+    checkTaskCount();
 }
 
 function checkTaskCount() {
@@ -54,5 +54,3 @@ function clearAll() {
 }
 
 showTask();
-
-    // Agregar un borrar todo si hay mas de 3 opciones
